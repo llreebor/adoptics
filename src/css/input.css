@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+/* Variables */
+@theme {
+	/* Container */
+	--container-padding: 0 16px;
+	--container-max-width: 1272px;
+
+	/* Fonts */
+	--font-inter: "Inter", sans-serif;
+
+	/* Colors */
+	--color-blue-400: #3183ef;
+
+	--color-gray-400: #a4a7ae;
+	--color-gray-600: #535862;
+	--color-gray-700: #414651;
+	--color-gray-750: #373a41;
+	--color-gray-800: #22262f;
+	--color-gray-900: #181d27;
+
+	/* Shadows */
+	--shadow-xs: 0px 1px 2px 0px rgba(10, 13, 18, 0.05);
+	--shadow-xs-button:
+		0px 0px 0px 1px rgba(10, 13, 18, 0.18) inset,
+		0px -2px 0px 0px rgba(10, 13, 18, 0.05) inset,
+		0px 1px 2px 0px rgba(10, 13, 18, 0.05);
+}
+
+/* Container max-width & paddings */
+@utility container {
+	@apply mx-auto max-w-[var(--container-max-width)] p-[var(--container-padding)];
+}
+@layer base {
+	body {
+		@apply font-inter;
+	}
+}
+@layer components {
+	/* Button */
+	.btn {
+		@apply shadow-xs-button flex max-w-fit items-center justify-center gap-2 rounded-lg border px-4 py-2.5 text-sm font-semibold;
+	}
+}
+@layer utilities {
+	.mobile-menu.open {
+		@apply left-0;
+	}
+	.btn.btn-primary {
+		@apply border-white/10 bg-blue-400 text-white transition-colors hover:bg-blue-600;
+	}
+	.btn.btn-secondary {
+		@apply border-white/10 bg-white py-3 text-gray-700 transition-colors hover:bg-gray-100;
+	}
+}
