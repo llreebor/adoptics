@@ -12,6 +12,7 @@
 	/* Colors */
 	--color-blue-400: #3183ef;
 
+	--color-gray-200: #d5d7da;
 	--color-gray-400: #a4a7ae;
 	--color-gray-600: #535862;
 	--color-gray-700: #414651;
@@ -33,13 +34,22 @@
 }
 @layer base {
 	body {
-		@apply font-inter;
+		@apply font-inter relative;
+	}
+	section {
+		@apply py-16 lg:py-20;
+	}
+	p {
+		@apply text-gray-600;
+	}
+	h1 {
+		@apply text-4xl font-semibold text-gray-900 lg:text-[60px] lg:leading-[1.2];
 	}
 }
 @layer components {
 	/* Button */
 	.btn {
-		@apply shadow-xs-button flex max-w-fit items-center justify-center gap-2 rounded-lg border px-4 py-2.5 text-sm font-semibold;
+		@apply shadow-xs-button flex max-w-fit items-center justify-center gap-2 rounded-lg border px-4 py-3 text-sm font-semibold;
 	}
 }
 @layer utilities {

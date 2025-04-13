@@ -15,6 +15,15 @@
 	</head>
 	<body class="relative h-full">
 		<div class="wrapper flex min-h-full flex-col">
+			<!-- TODO:BG Pattern -->
+			<div
+				class="absolute top-0 left-0 -z-10 hidden h-auto w-full bg-[radial-gradient(52.19%_100%_at_50%_0%,#000_0%,_rgba(0,0,0,0.00)_95.31%)]"
+			></div>
+			<img
+				class="absolute top-0 left-0 -z-10 h-auto w-full"
+				src="./images/background-pattern.svg"
+				alt="bg pattenr"
+			/>
 			<!-- Header -->
 			<header class="py-3">
 				<div class="container">
@@ -114,10 +123,10 @@
 							<div
 								class="z-10 mx-auto mt-16 flex w-full flex-col items-center justify-center space-y-5"
 							>
-								<a href="#" class="btn btn-secondary w-full max-w-[335px]">
+								<a href="#" class="btn btn-secondary w-full max-w-[335px] py-2">
 									Log in
 								</a>
-								<a href="#" class="btn btn-primary w-full max-w-[335px]">
+								<a href="#" class="btn btn-primary w-full max-w-[335px] py-2">
 									Sign up
 								</a>
 							</div>
@@ -125,8 +134,8 @@
 
 						<!-- Auth  -->
 						<div class="hidden gap-5 lg:flex">
-							<a href="#" class="btn btn-secondary">Log in</a>
-							<a href="#" class="btn btn-primary">Sign up</a>
+							<a href="#" class="btn btn-secondary py-2">Log in</a>
+							<a href="#" class="btn btn-primary py-2">Sign up</a>
 						</div>
 
 						<!-- Burger Button -->
@@ -149,7 +158,79 @@
 			</header>
 
 			<!-- Main Content -->
-			<main class="flex-auto"></main>
+			<main class="flex-auto">
+				<!-- Hero -->
+				<section>
+					<div class="container">
+						<div>
+							<!-- Label -->
+							<div
+								class="mx-auto flex w-full max-w-[360px] items-center justify-between gap-2 rounded-[10px] border border-gray-200 p-1 shadow-xs"
+							>
+								<div
+									class="flex shrink-0 items-center gap-1 rounded-md border border-gray-200 py-[2px] pr-[6px] pl-[2px]"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="13"
+										height="12"
+										viewBox="0 0 13 12"
+										fill="none"
+									>
+										<circle
+											cx="6.5"
+											cy="6.00006"
+											r="4.5"
+											fill="#9E77ED"
+											stroke="#F4EBFF"
+											stroke-width="3"
+											class="animate-pulse"
+										/>
+									</svg>
+									<p class="text-xs font-medium text-gray-700">New feature</p>
+								</div>
+								<a href="#" class="group flex items-center gap-1">
+									<p
+										class="text-center text-xs font-medium text-gray-700 group-hover:text-gray-900"
+									>
+										Check out the team dashboard
+									</p>
+									<img src="./images/arrow-right.svg" alt="arrow" />
+								</a>
+							</div>
+
+							<h1 class="mx-auto mt-4 max-w-[1024px] text-center text-balance">
+								Unlock 2X+ Better Ad Performance & Landing Page Conversions
+							</h1>
+
+							<p class="mx-auto mt-4 w-full max-w-[768px] text-center lg:mt-6">
+								AdOptics automatically creates high-performing single keyword ad
+								groups and keyword-specific landing pages—tailored in real-time
+								for every click.
+							</p>
+
+							<!-- Buttons -->
+							<div
+								class="mx-auto mt-8 flex w-full flex-col items-center justify-center gap-5 sm:mt-12 sm:flex-row"
+							>
+								<a
+									href="#"
+									class="btn btn-secondary w-full max-w-[335px] sm:max-w-fit"
+								>
+									<img src="./images/play-circle.svg" alt="play icon" />
+									Demo
+								</a>
+								<a
+									href="#"
+									class="btn btn-primary w-full max-w-[335px] sm:max-w-fit"
+								>
+									Sign up
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
 
 			<!-- Footer -->
 			<footer class="flex h-40 items-center justify-center bg-slate-300">
