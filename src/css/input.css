@@ -58,6 +58,9 @@
 	h3 {
 		@apply text-lg font-semibold text-gray-900 lg:text-xl;
 	}
+	h4 {
+		@apply font-inter text-2xl font-semibold text-gray-900 lg:text-3xl;
+	}
 }
 @layer components {
 	/* Button */
