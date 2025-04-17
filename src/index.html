@@ -227,12 +227,23 @@
 						</div>
 
 						<!-- Schema -->
-						<div class="mx-auto mt-16 max-w-[335px] py-16">
+						<div
+							class="relative mx-auto mt-16 max-w-[335px] pt-16 lg:flex lg:max-w-full lg:items-center"
+						>
+							<!-- Desktop Line Vector -->
+							<img
+								class="absolute top-0 right-[110px] -z-10 hidden xl:block"
+								src="./images/ad-vector-desktop.svg"
+								alt="vector"
+							/>
+
 							<!-- 1st -->
-							<div class="relative space-y-3">
+							<div
+								class="relative space-y-3 xl:w-full xl:max-w-[420px] xl:space-y-6"
+							>
 								<!-- Top Right Ellipse -->
 								<img
-									class="absolute -top-10 left-0 -z-10"
+									class="absolute -top-10 left-0 -z-10 xl:-top-16 xl:-left-10"
 									src="./images/ellipse.svg"
 									alt="ellipse image"
 								/>
@@ -251,7 +262,11 @@
 										<p class="text-sm font-medium text-gray-800 lg:text-base">
 											I need new ad for company
 										</p>
-										<img src="./images/search.svg" alt="seacrh icon" />
+										<img
+											class="size-5 xl:size-6"
+											src="./images/search.svg"
+											alt="seacrh icon"
+										/>
 									</div>
 									<div
 										class="ml-auto flex w-full max-w-[286px] items-center justify-between rounded-[40px] border border-[#D8D8D8] bg-white px-5 py-4 lg:max-w-[368px]"
@@ -259,7 +274,11 @@
 										<p class="text-sm font-medium text-gray-800 lg:text-base">
 											Best CRM for construction
 										</p>
-										<img src="./images/search.svg" alt="seacrh icon" />
+										<img
+											class="size-5 xl:size-6"
+											src="./images/search.svg"
+											alt="seacrh icon"
+										/>
 									</div>
 									<div
 										class="flex w-full max-w-[286px] items-center justify-between rounded-[40px] border border-[#D8D8D8] bg-white px-5 py-4 lg:max-w-[368px]"
@@ -267,7 +286,11 @@
 										<p class="text-sm font-medium text-gray-800 lg:text-base">
 											Best CRM for school
 										</p>
-										<img src="./images/search.svg" alt="seacrh icon" />
+										<img
+											class="size-5 xl:size-6"
+											src="./images/search.svg"
+											alt="seacrh icon"
+										/>
 									</div>
 									<div
 										class="ml-5 flex w-full max-w-[286px] items-center justify-between rounded-[40px] border border-[#D8D8D8] bg-white px-5 py-4 lg:max-w-[368px]"
@@ -275,17 +298,25 @@
 										<p class="text-sm font-medium text-blue-400 lg:text-base">
 											CRM for Development Company
 										</p>
-										<img src="./images/search.svg" alt="seacrh icon" />
+										<img
+											class="size-5 xl:size-6"
+											src="./images/search.svg"
+											alt="seacrh icon"
+										/>
 									</div>
 								</div>
 
-								<p class="font-semibold text-gray-700">Search Query</p>
+								<p class="font-semibold text-gray-700 xl:text-xl">
+									Search Query
+								</p>
 							</div>
 
 							<!-- 2nd -->
-							<div class="relative mx-auto mt-7 max-w-[293px] space-y-3">
+							<div
+								class="relative mx-auto mt-7 max-w-[293px] space-y-3 lg:mt-0 xl:m-0 xl:ml-[114px] xl:space-y-6"
+							>
 								<img
-									class="absolute -top-[33px] right-10 -z-10"
+									class="absolute -top-[33px] right-10 -z-10 lg:hidden"
 									src="./images/ad-vector.svg"
 									alt="vector"
 								/>
@@ -303,13 +334,67 @@
 										clients, streamline workflows, and scale faster.
 									</p>
 								</div>
-								<p class="font-semibold text-gray-700">Ad Displayed</p>
+								<p class="font-semibold text-gray-700 xl:text-xl">
+									Ad Displayed
+								</p>
 							</div>
 
 							<!-- 3rd -->
-							<div class="relative mt-7 max-w-[299px] space-y-3">
-								<div class="rounded-2xl bg-white p-4 shadow-sm"></div>
-								<p class="font-semibold text-gray-700">Landing Page</p>
+							<div
+								class="relative mx-auto mt-7 max-w-[299px] space-y-3 lg:mt-0 xl:m-0 xl:ml-[114px] xl:space-y-6"
+							>
+								<div class="rounded-2xl bg-white p-4 shadow-sm">
+									<div class="overflow-hidden rounded-lg">
+										<img src="./images/crm-image.png" alt="image" />
+									</div>
+									<h5 class="mt-2 text-xl font-semibold text-black">
+										CRM designed for development companies
+									</h5>
+
+									<!-- List -->
+									<ul class="mt-4 space-y-3">
+										<li class="flex items-start gap-2">
+											<img
+												class="size-5"
+												src="./images/check-circle.svg"
+												alt="check icon"
+											/>
+											<p class="text-sm font-medium text-blue-400">
+												Track Projects & Client Feedback
+											</p>
+										</li>
+										<li class="flex items-start gap-2">
+											<img
+												class="size-5"
+												src="./images/check-circle.svg"
+												alt="check icon"
+											/>
+											<p class="text-sm font-medium text-blue-400">
+												Automate Onboarding & Follow-ups
+											</p>
+										</li>
+										<li class="flex items-start gap-2">
+											<img
+												class="size-5"
+												src="./images/check-circle.svg"
+												alt="check icon"
+											/>
+											<p class="text-sm font-medium text-blue-400">
+												Voted Best CRM for Dev Teams
+											</p>
+										</li>
+									</ul>
+
+									<!-- Button -->
+									<div class="mt-8">
+										<a href="#" class="btn btn-primary max-w-full">
+											Get started today
+										</a>
+									</div>
+								</div>
+								<p class="font-semibold text-gray-700 xl:text-xl">
+									Landing Page
+								</p>
 							</div>
 						</div>
 					</div>
