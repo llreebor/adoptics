@@ -1,3 +1,0 @@
-# TODO:
-
-- fix buttons spacing
