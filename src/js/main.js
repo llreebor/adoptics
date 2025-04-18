@@ -3,6 +3,8 @@ function burgerMenu() {
 	const burger = document.querySelector("#burger")
 	const body = document.querySelector("body")
 
+	if (!menu) return
+
 	burger.addEventListener("click", () => {
 		burger.classList.toggle("active")
 		menu.classList.toggle("open")

@@ -68,6 +68,10 @@
 	.btn {
 		@apply shadow-xs-button flex max-w-fit items-center justify-center gap-2 rounded-lg border px-4 py-3 text-sm font-semibold;
 	}
+	/* Step Item */
+	.step-item {
+		@apply relative flex size-8 shrink-0 items-center justify-center rounded-full border-2 border-[#E9EAEB] bg-white before:absolute before:top-1/2 before:left-[30px] before:-z-10 before:h-[2px] before:w-[96px] before:-translate-y-1/2 before:bg-[#E9EAEB] last:before:hidden max-[1200px]:before:w-10 max-[480px]:before:left-4 max-sm:size-6;
+	}
 }
 @layer utilities {
 	.mobile-menu.open {
@@ -78,5 +82,12 @@
 	}
 	.btn.btn-secondary {
 		@apply border-white/10 bg-white py-3 text-gray-700 transition-colors hover:bg-gray-100;
+	}
+
+	.step-item.filled {
+		@apply border-0 bg-blue-400 before:bg-blue-400 after:hidden;
+	}
+	.step-item.active {
+		@apply border-white bg-blue-400 p-[2px] after:absolute after:-top-1 after:-left-1 after:-z-10 after:size-9 after:rounded-full after:bg-blue-400 max-sm:after:size-7;
 	}
 }
