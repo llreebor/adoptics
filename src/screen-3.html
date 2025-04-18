@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Screen 1</title>
+		<title>Screen 3</title>
 		<link rel="stylesheet" href="./css/output.css" />
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,35 +30,35 @@
 							class="mx-auto flex items-center gap-[94px] max-[1200px]:gap-10 max-[480px]:gap-4! max-[360px]:-translate-x-4 max-[360px]:gap-3! max-sm:gap-5"
 						>
 							<!-- Step Item -->
+							<div class="step-item group filled">
+								<!-- Dot Icon -->
+								<div
+									class="size-2.5 rounded-full bg-[#E9EAEB] group-[.filled]:hidden max-sm:size-2"
+								></div>
+
+								<!-- Check Icon -->
+								<img
+									class="hidden group-[.filled]:block"
+									src="./images/step-check.svg"
+									alt="img"
+								/>
+							</div>
+							<!-- Step Item -->
+							<div class="step-item group filled">
+								<!-- Dot Icon -->
+								<div
+									class="size-2.5 rounded-full bg-[#E9EAEB] group-[.filled]:hidden max-sm:size-2"
+								></div>
+
+								<!-- Check Icon -->
+								<img
+									class="hidden group-[.filled]:block"
+									src="./images/step-check.svg"
+									alt="img"
+								/>
+							</div>
+							<!-- Step Item -->
 							<div class="step-item group active">
-								<!-- Dot Icon -->
-								<div
-									class="size-2.5 rounded-full bg-[#E9EAEB] group-[.filled]:hidden max-sm:size-2"
-								></div>
-
-								<!-- Check Icon -->
-								<img
-									class="hidden group-[.filled]:block"
-									src="./images/step-check.svg"
-									alt="img"
-								/>
-							</div>
-							<!-- Step Item -->
-							<div class="step-item group">
-								<!-- Dot Icon -->
-								<div
-									class="size-2.5 rounded-full bg-[#E9EAEB] group-[.filled]:hidden max-sm:size-2"
-								></div>
-
-								<!-- Check Icon -->
-								<img
-									class="hidden group-[.filled]:block"
-									src="./images/step-check.svg"
-									alt="img"
-								/>
-							</div>
-							<!-- Step Item -->
-							<div class="step-item group">
 								<!-- Dot Icon -->
 								<div
 									class="size-2.5 rounded-full bg-[#E9EAEB] group-[.filled]:hidden max-sm:size-2"
@@ -161,46 +161,117 @@
 						<div
 							class="mx-auto flex w-full max-w-[620px] flex-col items-center"
 						>
-							<h2 class="text-center">
-								Create High-Converting Google Ads With AI-Powered Landing Pages
-							</h2>
+							<h2 class="text-center">Let’s Polish Your Product Messaging</h2>
 							<p class="mt-3 text-center">
-								We’ll help you launch search ads and keyword-specific landing
-								pages that increase CTR and reduce cost per click.
+								We pulled this info from your page to use in ads and dynamic
+								landing pages. Make edits if needed.
 							</p>
-							<!-- List -->
-							<ul class="mt-10 space-y-5">
-								<li class="flex items-start gap-3">
-									<img
-										class="size-7"
-										src="./images/check-circle.svg"
-										alt="check icon"
-									/>
-									<p class="font-medium">SKAGs and dynamic landing pages</p>
-								</li>
-								<li class="flex items-start gap-3">
-									<img
-										class="size-7"
-										src="./images/check-circle.svg"
-										alt="check icon"
-									/>
-									<p class="font-medium">Connect your Google Ads account</p>
-								</li>
-								<li class="flex items-start gap-3">
-									<img
-										class="size-7"
-										src="./images/check-circle.svg"
-										alt="check icon"
-									/>
-									<p class="font-medium">AI-written ads & pages</p>
-								</li>
-							</ul>
+							<!-- Content -->
+							<div class="mt-10 w-full space-y-10">
+								<!-- Input Row -->
+								<div class="space-y-5">
+									<h5 class="font-medium text-gray-800">SERVICE OVERVIEW</h5>
+
+									<label
+										class="relative flex flex-col gap-[6px]"
+										for="overview"
+									>
+										<span class="text-sm font-medium text-gray-700">
+											What do you offer?
+										</span>
+										<textarea
+											class="input min-h-[100px] resize-none pr-14 sm:min-h-[168px] sm:pr-[160px]"
+											name="overview"
+											id="overview"
+											placeholder="This service helps users..."
+										></textarea>
+										<button
+											class="btn btn-secondary absolute top-7 right-[2px] cursor-pointer border-transparent shadow-none"
+										>
+											<img src="./images/edit.svg" alt="edit icon" />
+											<span class="hidden sm:block">Smart rewrite</span>
+										</button>
+									</label>
+								</div>
+
+								<!-- Input Row -->
+								<div class="space-y-5">
+									<h5 class="font-medium text-gray-800">FEATURES</h5>
+
+									<label
+										class="relative flex flex-col gap-[6px]"
+										for="features"
+									>
+										<span class="text-sm font-medium text-gray-700">
+											Key features or benefits
+										</span>
+										<textarea
+											class="input min-h-[100px] resize-none pr-14 sm:min-h-[168px] sm:pr-[160px]"
+											name="features"
+											id="features"
+											placeholder="&#9679; Fast & Easy Setup
+&#9679; Works with Shopify, WordPress, Webflow
+&#9679; Custom Reports Included"
+										></textarea>
+										<button
+											class="btn btn-secondary absolute top-7 right-[2px] cursor-pointer border-transparent shadow-none"
+										>
+											<img src="./images/edit.svg" alt="edit icon" />
+											<span class="hidden sm:block">Smart rewrite</span>
+										</button>
+									</label>
+								</div>
+
+								<!-- Input Row -->
+								<div class="space-y-5">
+									<h5 class="font-medium text-gray-800">PRICING (optional)</h5>
+
+									<label class="relative flex flex-col gap-[6px]" for="pricing">
+										<span class="text-sm font-medium text-gray-700">
+											Pricing Details
+										</span>
+										<textarea
+											class="input min-h-[100px] resize-none sm:min-h-[168px]"
+											name="pricing"
+											id="pricing"
+											placeholder="Starting at $29/month with 14-day trial"
+										></textarea>
+									</label>
+								</div>
+
+								<!-- Input Row -->
+								<div class="space-y-5">
+									<h5 class="font-medium text-gray-800">
+										CALL TO ACTION (CTA)
+									</h5>
+
+									<label class="relative flex flex-col gap-[6px]" for="pricing">
+										<span class="text-sm font-medium text-gray-700">
+											What’s the user action
+										</span>
+										<textarea
+											class="input min-h-[100px] resize-none sm:min-h-[168px]"
+											name="pricing"
+											id="pricing"
+											placeholder="Start Your Free Trial Today"
+										></textarea>
+									</label>
+								</div>
+							</div>
+
+							<!-- Button -->
 							<div class="mt-10 w-full space-y-2">
-								<a href="#" class="btn btn-primary w-full max-w-full">
-									Let’s Get Started
+								<a href="#" class="btn btn-primary group w-full max-w-full">
+									Save & Continue
+									<img
+										class="transition-transform group-hover:translate-x-[2px] group-hover:-translate-y-[2px]"
+										src="./images/arrow-up-right.svg"
+										alt="arrow icon"
+									/>
 								</a>
 								<p class="text-left text-sm text-[#85888E]">
-									Takes less than 5 minutes.
+									We’ll use this content to write Google Ads and customize each
+									user’s landing experience.
 								</p>
 							</div>
 						</div>
