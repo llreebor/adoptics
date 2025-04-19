@@ -1,3 +1,4 @@
+// Mobile Menu
 function burgerMenu() {
 	const menu = document.querySelector("#mobile-menu")
 	const burger = document.querySelector("#burger")
@@ -30,9 +31,9 @@ function burgerMenu() {
 		}
 	})
 }
-
 burgerMenu()
 
+// FAQ Accordion
 function accordion() {
 	const items = document.querySelectorAll(".accordion-item")
 	const triggers = document.querySelectorAll(".accordion-trigger")
@@ -61,11 +62,15 @@ function accordion() {
 	})
 }
 accordion()
+
+// Price Toggle
 function animatedTabs() {
 	const tabs = document.querySelectorAll(".tab")
 	const tabUnderline = document.getElementById("tab-underline")
 	const subscriptionCheckbox = document.getElementById("subscriptionPeriod")
 	const saveBadge = document.querySelector(".save-badge")
+
+	if (!tabs.length) return
 
 	function setActiveTab(index) {
 		tabs.forEach((tab, i) => {
@@ -101,3 +106,26 @@ function animatedTabs() {
 	subscriptionCheckbox.checked = false // Monthly by default
 }
 animatedTabs()
+
+// Show Campaign select visibility
+function initializeCampaignInputToggle() {
+	const differentRadio = document.getElementById("different")
+	const campaignInput = document.getElementById("hidden_campaign_input")
+	const radios = document.querySelectorAll('input[name="campaign"]')
+	if (!radios.length) return
+	function toggleCampaignInput() {
+		if (differentRadio.checked) {
+			campaignInput.classList.remove("hidden")
+		} else {
+			campaignInput.classList.add("hidden")
+		}
+	}
+
+	toggleCampaignInput()
+
+	radios.forEach((radio) => {
+		radio.addEventListener("change", toggleCampaignInput)
+	})
+}
+
+initializeCampaignInputToggle()

@@ -174,12 +174,12 @@
 									<div class="cursor-pointer">
 										<input
 											type="radio"
-											id="radio1"
-											name="radio"
+											id="same"
+											name="campaign"
 											class="peer sr-only hidden"
 											checked
 										/>
-										<label for="radio1" class="radio-input-label">
+										<label for="same" class="radio-input-label">
 											<div class="pl-8">
 												<p class="font-medium text-gray-700">
 													Add new SKAGs to the same campaigns selected earlier
@@ -196,11 +196,14 @@
 									<div class="cursor-pointer">
 										<input
 											type="radio"
-											id="radio2"
-											name="radio"
+											id="different"
+											name="campaign"
 											class="peer sr-only hidden"
 										/>
-										<label for="radio2" class="radio-input-label group/label">
+										<label
+											for="different"
+											class="radio-input-label group/label"
+										>
 											<div
 												class="group absolute top-4 right-4 z-20 hidden size-5 cursor-pointer group-[.locked]/label:block"
 											>
@@ -226,6 +229,27 @@
 											</div>
 										</label>
 									</div>
+								</div>
+
+								<!-- Input Row -->
+								<div class="mt-10 hidden space-y-5" id="hidden_campaign_input">
+									<label class="relative flex flex-col gap-[6px]" for="pricing">
+										<span class="text-sm font-medium text-gray-700">
+											Select target campaign
+										</span>
+										<div class="input flex w-full px-3 py-0">
+											<select
+												class="w-full cursor-pointer py-3 text-[#717680] outline-none"
+												name="campaign"
+												id="campaign"
+											>
+												<option value="campaign_1">Campaign 1</option>
+												<option value="campaign_2">Campaign 2</option>
+												<option value="campaign_3">Campaign 3</option>
+												<option value="campaign_4">Campaign 4</option>
+											</select>
+										</div>
+									</label>
 								</div>
 							</div>
 
