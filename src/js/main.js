@@ -37,6 +37,7 @@ function accordion() {
 	const items = document.querySelectorAll(".accordion-item")
 	const triggers = document.querySelectorAll(".accordion-trigger")
 	const contents = document.querySelectorAll(".accordion-content")
+	if (!items) return
 	triggers.forEach((trigger) => {
 		if (items[0].classList.contains("active")) {
 			contents[0].classList.add("active")
@@ -60,3 +61,43 @@ function accordion() {
 	})
 }
 accordion()
+function animatedTabs() {
+	const tabs = document.querySelectorAll(".tab")
+	const tabUnderline = document.getElementById("tab-underline")
+	const subscriptionCheckbox = document.getElementById("subscriptionPeriod")
+	const saveBadge = document.querySelector(".save-badge")
+
+	function setActiveTab(index) {
+		tabs.forEach((tab, i) => {
+			tab.classList.toggle("text-white", i === index)
+		})
+	}
+
+	tabs.forEach((tab, index) => {
+		tab.onclick = () => {
+			setActiveTab(index)
+
+			// Update checkbox state: checked for yearly, unchecked for monthly
+			subscriptionCheckbox.checked = tab.dataset.value === "yearly"
+
+			if (subscriptionCheckbox.checked) {
+				saveBadge.classList.add("active")
+			} else {
+				saveBadge.classList.remove("active")
+			}
+
+			const { offsetLeft, clientWidth } = tab
+			tabUnderline.style.left = `${offsetLeft}px`
+			tabUnderline.style.width = `${clientWidth}px`
+			console.log()
+		}
+	})
+
+	// Initialize first tab as active (Monthly)
+	setActiveTab(0)
+	const { offsetLeft, clientWidth } = tabs[0]
+	tabUnderline.style.left = `${offsetLeft}px`
+	tabUnderline.style.width = `${clientWidth}px`
+	subscriptionCheckbox.checked = false // Monthly by default
+}
+animatedTabs()

@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Screen 1</title>
+		<title>Screen 4</title>
 		<link rel="stylesheet" href="./css/output.css" />
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,6 +29,48 @@
 						<div
 							class="mx-auto flex items-center gap-[94px] max-[1200px]:gap-10 max-[480px]:gap-4! max-[360px]:-translate-x-4 max-[360px]:gap-3! max-sm:gap-5"
 						>
+							<!-- Step Item -->
+							<div class="step-item group filled">
+								<!-- Dot Icon -->
+								<div
+									class="size-2.5 rounded-full bg-[#E9EAEB] group-[.filled]:hidden max-sm:size-2"
+								></div>
+
+								<!-- Check Icon -->
+								<img
+									class="hidden group-[.filled]:block"
+									src="./images/step-check.svg"
+									alt="img"
+								/>
+							</div>
+							<!-- Step Item -->
+							<div class="step-item group filled">
+								<!-- Dot Icon -->
+								<div
+									class="size-2.5 rounded-full bg-[#E9EAEB] group-[.filled]:hidden max-sm:size-2"
+								></div>
+
+								<!-- Check Icon -->
+								<img
+									class="hidden group-[.filled]:block"
+									src="./images/step-check.svg"
+									alt="img"
+								/>
+							</div>
+							<!-- Step Item -->
+							<div class="step-item group filled">
+								<!-- Dot Icon -->
+								<div
+									class="size-2.5 rounded-full bg-[#E9EAEB] group-[.filled]:hidden max-sm:size-2"
+								></div>
+
+								<!-- Check Icon -->
+								<img
+									class="hidden group-[.filled]:block"
+									src="./images/step-check.svg"
+									alt="img"
+								/>
+							</div>
 							<!-- Step Item -->
 							<div class="step-item group active">
 								<!-- Dot Icon -->
@@ -113,95 +155,64 @@
 									alt="img"
 								/>
 							</div>
-							<!-- Step Item -->
-							<div class="step-item group">
-								<!-- Dot Icon -->
-								<div
-									class="size-2.5 rounded-full bg-[#E9EAEB] group-[.filled]:hidden max-sm:size-2"
-								></div>
-
-								<!-- Check Icon -->
-								<img
-									class="hidden group-[.filled]:block"
-									src="./images/step-check.svg"
-									alt="img"
-								/>
-							</div>
-							<!-- Step Item -->
-							<div class="step-item group">
-								<!-- Dot Icon -->
-								<div
-									class="size-2.5 rounded-full bg-[#E9EAEB] group-[.filled]:hidden max-sm:size-2"
-								></div>
-
-								<!-- Check Icon -->
-								<img
-									class="hidden group-[.filled]:block"
-									src="./images/step-check.svg"
-									alt="img"
-								/>
-							</div>
-							<!-- Step Item -->
-							<div class="step-item group">
-								<!-- Dot Icon -->
-								<div
-									class="size-2.5 rounded-full bg-[#E9EAEB] group-[.filled]:hidden max-sm:size-2"
-								></div>
-
-								<!-- Check Icon -->
-								<img
-									class="hidden group-[.filled]:block"
-									src="./images/step-check.svg"
-									alt="img"
-								/>
-							</div>
 						</div>
 						<!-- Content -->
-
 						<div
 							class="mx-auto flex w-full max-w-[620px] flex-col items-center"
 						>
-							<h2 class="text-center">
-								Create High-Converting Google Ads With AI-Powered Landing Pages
-							</h2>
+							<h2 class="text-center">Connect Your Google Ads Account</h2>
 							<p class="mt-3 text-center">
-								We’ll help you launch search ads and keyword-specific landing
-								pages that increase CTR and reduce cost per click.
+								We’ll scan your existing campaigns for performance data and
+								publish new ads directly into your account.
 							</p>
-							<!-- List -->
-							<ul class="mt-10 space-y-5">
-								<li class="flex items-start gap-3">
-									<img
-										class="size-7"
-										src="./images/check-circle.svg"
-										alt="check icon"
-									/>
-									<p class="font-medium">SKAGs and dynamic landing pages</p>
-								</li>
-								<li class="flex items-start gap-3">
-									<img
-										class="size-7"
-										src="./images/check-circle.svg"
-										alt="check icon"
-									/>
-									<p class="font-medium">Connect your Google Ads account</p>
-								</li>
-								<li class="flex items-start gap-3">
-									<img
-										class="size-7"
-										src="./images/check-circle.svg"
-										alt="check icon"
-									/>
-									<p class="font-medium">AI-written ads & pages</p>
-								</li>
-							</ul>
-							<div class="mt-10 w-full space-y-2">
-								<button class="btn btn-primary w-full max-w-full">
-									Let’s Get Started
-								</button>
-								<p class="text-left text-sm text-[#85888E]">
-									Takes less than 5 minutes.
+							<!-- Content -->
+							<div class="mt-9 w-full space-y-9">
+								<a href="#" class="btn btn-secondary w-full max-w-full">
+									<img src="./images/google-icon.svg" alt="google icon" />
+									Sign in with Google
+								</a>
+
+								<div
+									class="mx-auto flex w-full max-w-[512px] flex-col items-center gap-4 sm:flex-row"
+								>
+									<div class="flex shrink-0 gap-4">
+										<img
+											class="size-6"
+											src="./images/check-circle-green.svg"
+											alt="check icon"
+										/>
+										<p class="font-medium text-green-700">
+											Connected as: sales@yourdomain.com
+										</p>
+									</div>
+
+									<button
+										class="btn btn-secondary shrink-0 border-none px-3 py-2 shadow-none"
+									>
+										Switch Account
+										<img src="./images/refresh.svg" alt="refresh-icon" />
+									</button>
+								</div>
+
+								<p class="text-sm text-[#85888E]">
+									We only request access to create ads in your account. Your
+									existing campaigns will not be modified.
 								</p>
+							</div>
+
+							<!-- Button -->
+							<div class="mt-10 w-full space-y-2">
+								<button
+									class="btn btn-primary group w-full max-w-full"
+									disabled
+								>
+									Continue
+									<img
+										class="transition-transform group-hover:translate-x-[2px] group-hover:-translate-y-[2px]"
+										src="./images/arrow-up-right.svg"
+										alt="arrow icon"
+									/>
+								</button>
 							</div>
 						</div>
 					</div>
