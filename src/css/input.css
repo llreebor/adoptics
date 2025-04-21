@@ -27,6 +27,7 @@
 	--color-green-700: #087443;
 
 	--color-orange-700: #b54708;
+	--color-error: #b42318;
 
 	/* Shadows */
 	--shadow-xs: 0px 1px 2px 0px rgba(10, 13, 18, 0.05);
@@ -80,7 +81,7 @@
 	}
 	/* Input */
 	.input {
-		@apply flex w-full rounded-lg border border-[#D5D7DA] p-3 text-gray-900 outline-blue-400 placeholder:text-[#717680] read-only:outline-none;
+		@apply flex w-full rounded-lg border border-[#D5D7DA] bg-white p-3 text-gray-900 outline-blue-400 placeholder:text-[#717680] read-only:outline-none;
 	}
 
 	/* Radio Input */
@@ -88,7 +89,7 @@
 		@apply relative flex w-full cursor-pointer rounded-xl border border-[#E9EAEB] p-4 transition-all peer-checked:border-blue-400 before:absolute before:top-[22px] before:left-[22px] before:z-10 before:size-2 before:rounded-full before:bg-white before:opacity-0 before:transition-opacity peer-checked:before:opacity-100 after:absolute after:top-4 after:left-4 after:size-5 after:rounded-full after:border after:border-[#D5D7DA] after:bg-transparent after:transition-colors peer-checked:after:border-blue-400 peer-checked:after:bg-blue-400;
 	}
 	.checkbox-input-label {
-		@apply relative flex w-full cursor-pointer rounded-xl border border-[#E9EAEB] p-4 transition-all peer-checked:border-blue-400 before:absolute before:top-[22px] before:left-[22px] before:z-10 before:size-2 before:rounded-full before:bg-white before:opacity-0 before:transition-opacity peer-checked:before:opacity-100 after:absolute after:top-4 after:left-4 after:size-5 after:rounded-full after:border after:border-[#D5D7DA] after:bg-transparent after:transition-colors peer-checked:after:border-blue-400 peer-checked:after:bg-blue-400;
+		@apply relative flex w-full cursor-pointer pl-7 text-[#717680] transition-all before:absolute before:top-[2px] before:left-0 before:z-20 before:size-5 before:rounded-md before:bg-center before:bg-no-repeat before:opacity-0 before:transition-opacity peer-checked:before:bg-[url('../images/ckeckbox-check.svg')] peer-checked:before:opacity-100 after:absolute after:top-[2px] after:left-0 after:z-10 after:size-5 after:rounded-md after:border after:border-[#E9EAEB] after:bg-transparent after:transition-colors peer-checked:after:border-blue-400 peer-checked:after:bg-blue-400;
 	}
 	.checkbox-input-only {
 		@apply relative flex cursor-pointer transition-all peer-checked:border-blue-400 before:absolute before:-top-2.5 before:-left-2.5 before:z-20 before:size-5 before:rounded-md before:bg-center before:bg-no-repeat before:opacity-0 before:transition-opacity peer-checked:before:bg-[url('../images/ckeckbox-check.svg')] peer-checked:before:opacity-100 after:absolute after:-top-2.5 after:-left-2.5 after:z-10 after:size-5 after:rounded-md after:border after:border-[#E9EAEB] after:bg-transparent after:transition-colors peer-checked:after:border-blue-400 peer-checked:after:bg-blue-400;

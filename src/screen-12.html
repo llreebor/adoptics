@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Screen 11</title>
+		<title>Screen 12</title>
 		<link rel="stylesheet" href="./css/output.css" />
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -161,23 +161,68 @@
 						<div
 							class="mx-auto flex w-full max-w-[650px] flex-col items-center"
 						>
-							<img src="./images/check-circle-large.png" alt="check circle" />
-							<h2 class="text-center">You're All Set!</h2>
+							<h2 class="text-center">Some Premium Features Will Be Removed</h2>
 							<p class="mt-3 text-center">
-								We’re now building your SKAG ad groups and dynamic landing
-								pages.
+								You selected the Free Plan, but chose features only available on
+								paid plans. Here’s what will change before we continue.
 							</p>
 							<!-- Content -->
 							<div class="mt-10 w-full space-y-10">
 								<!-- List -->
-								<ul class="mx-auto max-w-[312px] space-y-4">
+								<ul class="space-y-4">
+									<li class="flex items-start gap-2">
+										<img src="./images/x-circle.png" alt="check icon" />
+										<div class="space-y-2">
+											<p class="text-error font-medium">
+												Custom Trigger Criteria
+											</p>
+											<p class="flex items-start gap-2 text-sm text-[#252B37]">
+												<img
+													src="./images/arrow-narrow-right.svg"
+													alt="arrow"
+												/>
+												Reverting to Smart Defaults (2+ conv., ROAS > 2.0, CVR >
+												5%)
+											</p>
+										</div>
+									</li>
+									<li class="flex items-start gap-2">
+										<img src="./images/x-circle.png" alt="check icon" />
+										<div class="space-y-2">
+											<p class="text-error font-medium">
+												Destination Campaign Selection
+											</p>
+											<p class="flex items-start gap-2 text-sm text-[#252B37]">
+												<img
+													src="./images/arrow-narrow-right.svg"
+													alt="arrow"
+												/>
+												New SKAGs will be created in original source campaigns
+											</p>
+										</div>
+									</li>
+									<li class="flex items-start gap-2">
+										<img src="./images/x-circle.png" alt="check icon" />
+										<div class="space-y-2">
+											<p class="text-error font-medium">
+												AI Optimization Recommendations (if selected in Pro)
+											</p>
+											<p class="flex items-start gap-2 text-sm text-[#252B37]">
+												<img
+													src="./images/arrow-narrow-right.svg"
+													alt="arrow"
+												/>
+												Not available on Free Plan
+											</p>
+										</div>
+									</li>
 									<li class="flex items-start gap-2">
 										<img
 											src="./images/check-circle-green-small.png"
 											alt="check icon"
 										/>
 										<p class="font-medium text-green-400">
-											Connecting to Google Ads
+											Up to 25 SKAGs & Pages - still included
 										</p>
 									</li>
 									<li class="flex items-start gap-2">
@@ -186,135 +231,42 @@
 											alt="check icon"
 										/>
 										<p class="font-medium text-green-400">
-											Reading Search Term Reports
-										</p>
-									</li>
-									<li class="flex items-start gap-2">
-										<img
-											src="./images/check-circle-green-small.png"
-											alt="check icon"
-										/>
-										<p class="font-medium text-green-400">
-											Creating New Ad Groups
-										</p>
-									</li>
-									<li class="flex items-start gap-2">
-										<img src="./images/hourglass.svg" alt="hourglass icon" />
-										<p class="font-medium text-orange-700">
-											Publishing Dynamic Landing Pages…
+											Landing Page Customization - still included
 										</p>
 									</li>
 								</ul>
 
-								<div class="flex w-full items-start gap-4">
-									<img src="./images/puzzle.svg" alt="puzzle icon" />
-									<p class="text-xl font-medium text-gray-800">
-										Add This Snippet to Your Website
-									</p>
-								</div>
-
-								<!-- Code -->
-								<label
-									class="relative flex w-[620px] max-w-full flex-1 flex-col gap-[6px] overflow-x-auto sm:overflow-x-visible"
-								>
-									<span class="text-sm font-medium text-gray-700">Code</span>
-
-									<div class="flex w-[620px]">
-										<div
-											class="input flex min-h-[100px] resize-none flex-col rounded-r-none border-r-0 sm:min-h-[160px]"
-											type="text"
-											readonly
-										>
-											<pre class="-mt-7 flex w-full">
-													<code class="text-[#717680] leading-[1.5] w-full whitespace-pre ">
-&lt;script&gt;
-    ;(function () {
-        console.log("Dynamic snippet installed!")
-        // Example tracking script
-        window.adopticsData = { sessionId: Date.now() }
-    })()
-&lt;/script&gt;
-</code></pre>
-										</div>
-										<div
-											class="shrink-0 overflow-hidden rounded-r-lg border border-l-0 border-[#D5D7DA] pt-[2px] pr-[2px]"
-										>
-											<button
-												class="mb-auto flex cursor-pointer gap-2 px-4 py-[14px] text-sm font-semibold text-gray-700 transition-colors hover:bg-gray-100"
-											>
-												<img src="./images/copy.svg" alt="edit icon" />
-												Copy Code
-											</button>
-										</div>
-									</div>
-								</label>
-
-								<!-- Alert & Links  -->
+								<!-- Alert   -->
 								<div>
 									<div
 										class="flex items-start gap-4 rounded-2xl bg-[#EFF8FF] p-5 shadow-xs"
 									>
-										<img
-											class="shrink-0"
-											src="./images/alert.svg"
-											alt="alert icon"
-										/>
 										<p class="text-[#1849A9]">
-											Install this on all pages you want dynamically customized.
-											We recommend placing it in the &lt;head&gt; tag site-wide.
+											Upgrade anytime to unlock full automation. All plans come
+											with a 14-day free trial — no billing until the trial
+											ends.
 										</p>
-									</div>
-
-									<div
-										class="mt-3 flex flex-wrap items-center justify-between gap-x-4 gap-y-2"
-									>
-										<a
-											href="#"
-											class="max-w-fit rounded-lg px-3 py-2 text-sm font-medium text-[#004EEB] hover:bg-[#EFF8FF]"
-										>
-											WordPress
-										</a>
-										<a
-											href="#"
-											class="max-w-fit rounded-lg px-3 py-2 text-sm font-medium text-[#004EEB] hover:bg-[#EFF8FF]"
-										>
-											Shopify
-										</a>
-										<a
-											href="#"
-											class="max-w-fit rounded-lg px-3 py-2 text-sm font-medium text-[#004EEB] hover:bg-[#EFF8FF]"
-										>
-											Webflow
-										</a>
-										<a
-											href="#"
-											class="max-w-fit rounded-lg px-3 py-2 text-sm font-medium text-[#004EEB] hover:bg-[#EFF8FF]"
-										>
-											Google Tag Manager
-										</a>
 									</div>
 								</div>
 							</div>
 
 							<!-- Button -->
 							<div class="mt-10 w-full space-y-2">
-								<button class="btn btn-primary group w-full max-w-full">
-									Go to My Dashboard
-									<img
-										class="transition-transform group-hover:translate-x-[2px] group-hover:-translate-y-[2px]"
-										src="./images/arrow-up-right.svg"
-										alt="arrow icon"
-									/>
-								</button>
-
+								<div class="grid gap-5 sm:grid-cols-2">
+									<button class="btn btn-secondary group w-full max-w-full">
+										Go Back & Choose Paid Plan
+									</button>
+									<button class="btn btn-primary group w-full max-w-full">
+										Continue with Free Plan
+										<img
+											class="transition-transform group-hover:translate-x-[2px] group-hover:-translate-y-[2px]"
+											src="./images/arrow-up-right.svg"
+											alt="arrow icon"
+										/>
+									</button>
+								</div>
 								<p class="text-left text-sm text-[#85888E]">
-									Need help? Chat with us or email
-									<a
-										href="mailto:support@adoptics.com"
-										class="rounded-lg text-sm font-medium text-[#3183EF] underline-offset-4 hover:underline"
-									>
-										support@adoptics.com.
-									</a>
+									You can upgrade later from your dashboard at any time.
 								</p>
 							</div>
 						</div>
